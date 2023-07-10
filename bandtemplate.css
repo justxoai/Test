@@ -1,0 +1,520 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px ;
+}
+i{
+    margin-right: 5px;
+}
+.Header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.Left-header{
+    display: flex;
+}
+.Left-header div{
+    padding: 12px 24px; 
+    font-family:"Lato", sans-serif; 
+}
+.Left-header div:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+.delete a{
+    color: white;
+    text-decoration: none;
+}
+.delete a div{
+    padding: 0px;
+    width: 100%;
+}
+.Drop-list{
+    position: relative;
+}
+.Drop-list ul {
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0;
+}
+.Drop-list ul li{
+    padding: 8px 16px;
+    width: 160px;    
+}
+.Drop-list ul li:hover{
+    background-color: #ccc;
+    color: black;
+}
+.Drop-list:hover ul{
+    display: block;
+}
+.Right-header{
+    display: flex;
+}
+.search{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 20px;
+}
+.search:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.menu{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 12px 24px ;
+    position: relative;
+}
+.menu ul{
+    position: absolute;
+    list-style: none;
+    background-color: black;
+    color: white;
+    left: 0;
+    top: 100%;
+    transform: translate(-80%, 0);
+    display: none;
+}
+.menu ul li{
+    padding: 12px 24px ;
+    width: 400px;
+    height: 46px;
+}
+.menu:hover{
+    cursor: pointer;
+    background-color: rgb(204, 204, 204);
+    color: black;
+}
+.menu ul li:hover{
+    background-color: #ccc;
+    color: black;
+}
+.menu:hover ul{
+    display: block;
+}
+.carousel-item img{
+    width: 100%;
+}
+.carousel{
+    margin-top: 42px;
+    position: relative;
+    margin: auto;
+    max-width: 2000px;
+}
+.carousel-inner{
+    margin-top: 42px;
+}
+.banner{
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    padding: 16px 32px;
+}
+.banner h3{   
+    margin: 10px 0px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Theband{
+    max-width:  800px;
+    margin: auto;
+    padding: 64px 16px;
+}
+.text h1{
+    display: block;
+    text-align: center;
+    margin: 13px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text i{
+    display: block;
+    text-align: center;
+    margin: 13px;
+    font-family:"Lato", sans-serif ;
+    opacity: 0.6;
+}
+.text p{
+    margin: 15px;
+    text-align: justify;
+    font-family:"Lato", sans-serif ;
+}
+.text i{
+    opacity: 0,6;
+    color: #666;
+}
+.pic-band{
+    display: flex; 
+    justify-content: space-between;
+    padding: 32px 0px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+}
+.box img{
+    width: 60%;
+    border-radius:5px;
+    margin-bottom: 16px;
+}
+.box p{
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+    font-family:"Lato", sans-serif ; 
+}
+
+.Tourdates{    
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    padding: 64px 16px;
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+}
+.text-tour h2{
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-tour i{
+    color: #666;
+    display: block;
+    text-align: center;
+    font-family:"Lato", sans-serif ;
+}
+.date{
+    background-color: black;
+    max-width: 768px;
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;   
+}
+
+.sold{
+    background-color: #ff403c;
+    color: white;
+    padding: 0px 8px;
+    margin-left: 16px;
+    border: none;
+}
+.t9, .t10{
+    display: flex;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    background-color: white
+    
+}
+.t11{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    background-color: white
+}
+.num{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 0px 6px;
+}
+.new-text, .paris-text, .san-text{
+    background-color: white;
+    padding: 0px 16px;
+    font-family:"Lato", sans-serif ;
+}
+.tour{
+    display: flex;
+    max-width: 768px;
+    margin: 0px 8px;
+    padding: 32px 0px;
+}
+
+
+
+.block img{
+    width: 100%;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 8px;
+    justify-content: space-between;
+}
+.buy{
+    color: white;
+    background-color: black;
+    border: none;
+    margin-bottom:16px ;
+    padding: 8px 16px;
+    border-radius: 0px;
+}
+.buy:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+.block b, .block p{
+    display: block;
+    margin: 15px 0px;
+}
+
+
+
+
+
+.modal-header{
+    background-color: #009688;
+    color: white;
+    position: relative;
+    padding: 32px 16px;
+}
+.modal-header h1{
+    text-align: center;
+    width: 100%;
+    margin: 10px 0px;
+    letter-spacing: 4px;
+}
+.btn-close{
+    margin: 0;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.modal-body{
+    padding: 0px 16px;
+}
+.modal-body p{
+    width: 100%;
+    margin: 15px 0px;
+}
+.modal-body input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+.modal-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.mf-head{
+    width: 100%;
+}
+.pay{
+    background-color: #009688;
+    color: white;
+    width: 100%;
+    margin: 16px 0px;
+    padding: 16px;
+    border: none;
+    border-radius: 0px;
+}
+.mf-head button:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: black;
+}
+.mf-end{
+    display: flex;
+    justify-content: space-between ;
+    width: 100%;
+    align-items: center;
+}
+.close{
+    background-color: #f44336;
+    color: white;
+    width: 30%;
+    margin: 16px 0px;
+    padding: 8px;
+    border: none;
+    border-radius: 0px;
+}
+.mf-end u{
+    color: #2196f3;
+}
+.mf-end p{
+    width: 23%;
+}
+.mf-end button:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: black;
+}
+.text-tour h2{
+    display: block;
+    margin: 10px 0px ;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-tour i{
+    display: block;
+    margin: 15px 0px;
+    font-family:"Lato", sans-serif ;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 45px;
+    padding: 64px 16px;
+}
+.cont-cont{
+    display: flex;
+    justify-content: space-between;
+    max-width: 768px;
+    padding: 32px 0px;
+}
+.input-cont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;    
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;   
+}
+.text-cont h2{
+    display: block;
+    text-align: center;
+    margin: 10px 0px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-cont i{
+    display: block;
+    margin: 15px 0px;
+    font-family:"Lato", sans-serif ;
+    color: #666;
+}
+.text-cont{
+    display: block;
+    text-align: center;   
+}
+.item{
+    width: 100%;
+    margin-bottom: 16px;
+}
+.item i{
+    width: 30px;
+}
+.input-mess input{
+    width: 100%;
+    padding: 8px;
+    display: block;
+}
+.input-name input, .input-mail input{
+    width: 100%;
+    padding: 8px;
+    display: block;
+}
+.bottom button{
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 8px;
+    top: 0px;
+    padding: 8px 16px;
+    margin: 16px 0px;
+    border: none;
+}
+.bottom button:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: black;
+    border: none;
+}
+.butt{
+    position: relative;
+}
+.input-name  {
+    padding: 0px 8px ;
+}
+.input-mail{
+    padding : 0px 8px;
+}
+.input-mess{
+    padding: 0px 8px;
+}
+.pic img{
+    width: 100%;
+    filter: grayscale(50%); 
+    height: auto;   
+}
+.pic img:hover{
+    cursor: pointer;
+}
+.footer{
+    text-align: center;
+    padding: 64px 16px;
+}
+.foot-item{
+    display: flex;    
+    justify-content: center;
+}
+.foot-text p{
+    display: block;
+    padding: 15px 0px;
+    color: #666;
+    font-family:"Lato", sans-serif ;
+}
+.foot-item i{
+    color: #666;
+    font-size: 24px;
+    width: 24px;
+}
+@media only screen and (max-width: 600px) {
+    .delete {
+      display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .pic{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tour{
+        flex-direction: column;
+    }
+    .cont-cont{
+        flex-direction: column;
+    }
+}
